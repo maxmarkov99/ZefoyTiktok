@@ -2,7 +2,7 @@
 <div align="center">
   
 # Zefoy TikTok Automator
-Automate TikTok follower bot, like bot, share bot, view bot and more using selenium. Click <a href="https://github.com/useragents/Zefoy-TikTok-Automator/issues">here</a> to report bugs.
+Automate TikTok follower bot, like bot, share bot, view bot and more using selenium.
 
 
   
