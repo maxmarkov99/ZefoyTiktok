@@ -1,5 +1,6 @@
 #Developed by github.com/maxmarkov99
-#This script was made for educational purposes. I am not responsible for your actions using this script. This code is a few months old, hence why it may not appear as professional but still works to this day.
+#This script was made for educational purposes. I am not responsible for your actions using this script. This code is a few months old, hence why it may not
+#appear as professional but still works to this day.
 #If used in any illigal form, you will be sued and will be reported repeditly
 #Hope you like it
 try:
@@ -8,7 +9,7 @@ try:
     from colorama import Fore, init
     import warnings, selenium, platform
 except ImportError:
-    input("Error while importing modules. Please install the modules in requirements.txt")
+    input("dude, install requirements.txt")
 
 init(convert = True, autoreset = True)
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -19,7 +20,7 @@ if platform.system() == "Windows":
 
 os.system(clear)
 
-ascii_text = f"""{Fore.RED}
+ascii_text = f"""{Fore.BLUE}
 
 ─██████████████─██████████████─██████████████─████████████████───██████████████─
 ─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░░░██───██░░░░░░░░░░██─
@@ -206,7 +207,7 @@ class automator:
     def update_title(self, bot, remaining, rl = False):
         if clear == "cls":
             os.system(clear)
-            ctypes.windll.kernel32.SetConsoleTitleW(f"TikTok AIO | Sent: {self.sent} | Cooldown: {remaining}s | Developed by @useragents on Github")
+            ctypes.windll.kernel32.SetConsoleTitleW(f"TikTok AIO | Sent: {self.sent} | Cooldown: {remaining}s | Developed by @maxmarkov99 on Github")
             print(ascii_text)
             print(self.console_msg(self.sent) + f" Sent {bot}")
             rl_cooldown = "0"
@@ -226,7 +227,7 @@ class automator:
         if "502 Bad Gateway" in self.driver.page_source:
             os.system(clear)
             print(ascii_text)
-            input(f"{self.console_msg('Error')} This website does not allow VPN or proxy services.")
+            input(f"{self.console_msg('Error')} This website does not allow VPN or proxy services so turn it off.")
             os._exit(0)
         self.check_for_captcha()
         self.check_status()
