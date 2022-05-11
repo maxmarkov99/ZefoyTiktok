@@ -1,5 +1,7 @@
 #Developed by github.com/maxmarkov99
 #This script was made for educational purposes. I am not responsible for your actions using this script. This code is a few months old, hence why it may not appear as professional but still works to this day.
+#If used in any illigal form, you will be sued and will be reported repeditly
+#Hope you like it
 try:
     from selenium import webdriver
     import time, os, ctypes, requests
@@ -18,14 +20,18 @@ if platform.system() == "Windows":
 os.system(clear)
 
 ascii_text = f"""{Fore.RED}
-                ████████▀▀▀████
-                ████████────▀██
-                ████████──█▄──█
-                ███▀▀▀██──█████
-                █▀──▄▄██──█████
-                █──█████──█████
-                █▄──▀▀▀──▄█████
-                ███▄▄▄▄▄███████ github.com/maxmarkov99
+
+─██████████████─██████████████─██████████████─████████████████───██████████████─
+─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░░░██───██░░░░░░░░░░██─
+─██░░██████░░██─██░░██████████─██████░░██████─██░░████████░░██───██░░██████░░██─
+─██░░██──██░░██─██░░██─────────────██░░██─────██░░██────██░░██───██░░██──██░░██─
+─██░░██████░░██─██░░██████████─────██░░██─────██░░████████░░██───██░░██──██░░██─
+─██░░░░░░░░░░██─██░░░░░░░░░░██─────██░░██─────██░░░░░░░░░░░░██───██░░██──██░░██─
+─██░░██████░░██─██████████░░██─────██░░██─────██░░██████░░████───██░░██──██░░██─
+─██░░██──██░░██─────────██░░██─────██░░██─────██░░██──██░░██─────██░░██──██░░██─
+─██░░██──██░░██─██████████░░██─────██░░██─────██░░██──██░░██████─██░░██████░░██─
+─██░░██──██░░██─██░░░░░░░░░░██─────██░░██─────██░░██──██░░░░░░██─██░░░░░░░░░░██─
+─██████──██████─██████████████─────██████─────██████──██████████─██████████████─ github.com/maxmarkov99
 """
 
 class automator:
@@ -71,17 +77,17 @@ class automator:
             time.sleep(1)
 
     def console_msg(self, status):
-        colour = Fore.RED
+        colour = Fore.BLUE
         if status == "Success":
-            colour = Fore.GREEN
-        return f"                {Fore.WHITE}[{colour}{status}{Fore.WHITE}]"
+            colour = Fore.BLUE
+        return f"                {Fore.BLUE}[{colour}{status}{Fore.BLUE}]"
     
     def update_ascii(self):
         options = f"""
-{self.console_msg("1")} Follower Bot {Fore.RED}{self.status["followers"]}
-{self.console_msg("2")} Like Video Bot {Fore.RED}{self.status["likes"]}
-{self.console_msg("3")} View Bot {Fore.RED}{self.status["views"]}
-{self.console_msg("4")} Share Bot {Fore.RED}{self.status["shares"]}
+{self.console_msg("1")} Follower Bot {Fore.BLUE}{self.status["followers"]}
+{self.console_msg("2")} Like Video Bot {Fore.BLUE}{self.status["likes"]}
+{self.console_msg("3")} View Bot {Fore.BLUE}{self.status["views"]}
+{self.console_msg("4")} Share Bot {Fore.BLUE}{self.status["shares"]}
         """
         return ascii_text + options
     
@@ -236,7 +242,7 @@ class automator:
         os.system(clear)
         print(self.update_ascii())
         try:
-            option = int(input(f"                {Fore.RED}> {Fore.WHITE}"))
+            option = int(input(f"                {Fore.BLUE}> {Fore.BLUE}"))
         except ValueError:
             self.start()
         if option == 1:
